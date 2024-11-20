@@ -15,6 +15,8 @@ url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100.
   }
   .miami-font{
     font-family: 'Miama', sans-serif;
+    font-style: italic;
+    font-weight: 400;
   }
 
   body{
@@ -43,12 +45,14 @@ url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100.
     color: #E6533C;
   }
 
-  .primary-button{
-    width: 224px;
-    height: 54px;
-    padding: 16px 40px;
+  .primary-btn{
+    text-decoration: none;
+    width: 140px;
+    padding: 12px 24px;
     background-color: #E6533C;
+    border-radius: 42px;
     color: #FFFFFF;
+    text-align: center;
   }
   
   /* navbar styles */
@@ -56,7 +60,7 @@ url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100.
     color: #E6533C;
     font-style: italic;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   header{
     display: flex;
@@ -83,7 +87,10 @@ url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100.
     height: 24px;
     border-radius: 46px;
   }
- 
+  nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+  }
   nav > ul > li:first-child{       /* Home menu style */
     background-color: #E6533C;
     width: 32px;
@@ -91,6 +98,122 @@ url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100.
     padding: 8px 20px;
     border-radius: 46px;
   }
+
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-left{
+    margin-right: 100px;
+  }
+  .banner-left > h1{
+    font-size: 4rem;
+    line-height: 75px;
+  }
+  .banner > .banner-left > p{
+    margin-bottom: 50px;
+  }
+
+  .shape{
+    font-family: 'Miama';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 8rem;
+  }
   
+  .banner-right{
+    background-image: url(./images/Images_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 570px;
+  }
+  .button{
+    display: flex;
+    gap: 14px;
+  }
+
+  .social-card{
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-card1{
+    position: relative;
+    transform: translateY(420px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3030308A;
+    width: 206px;
+    height: 96px;
+    border: 1px;
+    border-radius: 12px;
+  }
+  .social-text >p{
+    margin-top: -10px;
+  }
+  .play-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+    margin-right: 20px;
+  }
+  .play-btn i{
+    font-size: 20px;
+  }
+  .social-card2{
+    position: relative;
+    transform: translateY(130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3030308A;
+    width: 206px;
+    height: 96px;
+    border: 1px;
+    border-radius: 12px;
+  }
+ 
 
 
+/* small device responsive */
+@media screen and (max-width:576px) {
+  body{
+    margin: 0 40px;
+  }
+  #logo{
+    width: 400px;
+  }
+  nav{
+    display: none;
+  }
+  .banner{
+    display: block;
+  }
+  .banner-left {
+    margin-right: 0px;
+}
+}
+
+
+/* medium device responsive */
+@media screen and (min-width:576) and (max-width:992px) {
+  .mobile-menu{
+    display: none;
+  }
+}
+
+/* large device responsive */
+@media screen and (min-width:992px) {
+  body{
+    margin: 0 40px;
+  }
+  .mobile-menu{
+    display: none;
+  }
+}
