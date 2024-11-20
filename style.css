@@ -1,0 +1,68 @@
+*body{
+  margin: 0px;
+  padding: 0px;
+}
+@import 
+url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama?styles=170364,627');
+
+/* shared styles */
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .miami-font{
+    font-family: 'Miama', sans-serif;
+  }
+
+  .title-font{
+    font-family: "inter";
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FFFFFF;
+  }
+  .title-description-font{
+    font-family: "inter";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF80;
+  }
+
+  .primary-color{
+    color: #E6533C;
+  }
+
+  .primary-button{
+    width: 224px;
+    height: 54px;
+    padding: 16px 40px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+  }
+  
+  /* navbar styles */
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav > ul{
+    display: flex;
+    gap: 10px;
+  }
+  nav > ul > li{
+    text-decoration: none;
+    width: 92px;   
+    height: 38px;
+    border-radius: 46px;
+    padding: 8px 20px;
+  }
+  
+
+
